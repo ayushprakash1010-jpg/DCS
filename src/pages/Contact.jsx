@@ -7,15 +7,47 @@ export default function Contact() {
     name: '', email: '', phone: '', service: '', message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 5000)
+    setLoading(true)
+    setError('')
+
+    // Web3Forms submission
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY', // <-- We need to replace this!
+          subject: `New Lead: Crane Service Request from ${formData.name}`,
+          from_name: 'DCS Website',
+          ...formData
+        }),
+      })
+
+      const result = await response.json()
+      if (result.success) {
+        setSubmitted(true)
+        setFormData({ name: '', email: '', phone: '', service: '', message: '' })
+        setTimeout(() => setSubmitted(false), 5000)
+      } else {
+        setError('Something went wrong. Please try again later.')
+      }
+    } catch (err) {
+      setError('Network error. Please try again or use WhatsApp.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -40,6 +72,12 @@ export default function Contact() {
             <div className="contact-form-wrapper reveal-left">
               <h2 className="section-title">Send Us a Message<span className="dot">.</span></h2>
               <p className="section-subtitle" style={{ marginBottom: '32px' }}>Fill in the form below and our team will get back to you within 24 hours.</p>
+
+              {error && (
+                <div style={{ color: 'red', marginBottom: '16px', padding: '10px', background: '#ffeeee', borderRadius: '8px' }}>
+                  {error}
+                </div>
+              )}
 
               {submitted ? (
                 <div className="form-success">
@@ -79,8 +117,8 @@ export default function Contact() {
                     <label htmlFor="message">Your Message *</label>
                     <textarea id="message" name="message" rows="5" value={formData.message} onChange={handleChange} required placeholder="Tell us about your project requirements..."></textarea>
                   </div>
-                  <button type="submit" className="btn btn-primary btn-lg">
-                    <i className="fas fa-paper-plane"></i> Send Message
+                  <button type="submit" className="btn btn-primary btn-lg" disabled={loading}>
+                    <i className={loading ? "fas fa-spinner fa-spin" : "fas fa-paper-plane"}></i> {loading ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>
               )}
