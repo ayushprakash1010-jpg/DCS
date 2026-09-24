@@ -37,7 +37,7 @@ export default function Home() {
         <div className="hero-content">
           <div className="hero-badge">Established 2006 — 19+ Years of Trust</div>
           <h1>Built to <span className="highlight">Lift.</span><br />Trusted to <span className="highlight">Deliver.</span></h1>
-          <p>Deepak Crane Service delivers high-performance crane and boom lift rentals for India's toughest infrastructure and industrial demands. Precision, reliability, and safety — every lift, every time.</p>
+          <p><strong>"Strength you can rely on."</strong> Deepak Crane Service delivers high-performance crane and boom lift rentals for India's toughest infrastructure and industrial demands. Precision, reliability, and safety — every lift, every time.</p>
           <div className="hero-buttons">
             <Link to="/fleet" className="btn btn-primary">
               <i className="fas fa-truck-loading"></i> Explore Our Fleet
