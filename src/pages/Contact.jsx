@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useScrollReveal } from '../hooks'
+import SEO from '../components/SEO'
 
 export default function Contact() {
   const ref = useScrollReveal()
@@ -52,6 +53,11 @@ export default function Contact() {
 
   return (
     <div ref={ref}>
+      <SEO 
+        title="Contact Us" 
+        description="Get in touch with Deepak Crane Service. Available 24/7 for heavy lifting needs, crane rentals, and technical inquiries." 
+        url="/contact" 
+      />
       {/* PAGE HERO */}
       <section className="page-hero page-hero-sm">
         <div className="page-hero-bg">

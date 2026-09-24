@@ -1,11 +1,17 @@
 import { Link } from 'react-router-dom'
 import { useScrollReveal } from '../hooks'
+import SEO from '../components/SEO'
 
 export default function About() {
   const ref = useScrollReveal()
 
   return (
     <div ref={ref}>
+      <SEO 
+        title="About Us" 
+        description="Learn about Deepak Crane Service. With over 19 years of experience, we are India's premier crane rental service provider, committed to safety, precision, and performance." 
+        url="/about" 
+      />
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="page-hero-bg">

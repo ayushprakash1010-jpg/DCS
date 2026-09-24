@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useScrollReveal, useCounter } from '../hooks'
+import SEO from '../components/SEO'
 
 export default function Home() {
   const sectionRef = useScrollReveal()
@@ -23,6 +24,11 @@ export default function Home() {
 
   return (
     <div ref={sectionRef}>
+      <SEO 
+        title="Crane Rental Services in India" 
+        description="Deepak Crane Service delivers high-performance crane and boom lift rentals for India's toughest infrastructure and industrial demands. Precision, reliability, and safety — every lift, every time." 
+        url="/" 
+      />
       {/* HERO */}
       <section className="hero" id="home">
         <div className="hero-bg">

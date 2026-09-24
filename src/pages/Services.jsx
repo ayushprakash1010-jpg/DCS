@@ -53,11 +53,19 @@ const processSteps = [
   { icon: 'fa-truck', title: 'Demobilization', desc: 'Efficient teardown and transport once the job is complete.' },
 ]
 
+import { useScrollReveal } from '../hooks'
+import SEO from '../components/SEO'
+
 export default function Services() {
   const ref = useScrollReveal()
 
   return (
     <div ref={ref}>
+      <SEO 
+        title="Our Services" 
+        description="We provide comprehensive crane rental services, from heavy lifting and plant erection to customized lifting plans. Explore our specialized services." 
+        url="/services" 
+      />
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="page-hero-bg">

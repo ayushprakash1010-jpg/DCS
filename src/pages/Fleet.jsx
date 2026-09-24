@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useScrollReveal } from '../hooks'
+import SEO from '../components/SEO'
 
 const equipment = [
   { type: 'Telescopic', name: 'Telescopic Crane 15MT', capacity: '15 MT', boom: '20m', image: '/images/crane-telescopic.jpg' },
@@ -37,6 +38,11 @@ export default function Fleet() {
 
   return (
     <div ref={ref}>
+      <SEO 
+        title="Our Equipment Fleet" 
+        description="Browse our extensive fleet of Telescopic Cranes, Farana Cranes, and Boom Lifts. Ranging from 15MT to 350MT capacities, maintained to the highest standards." 
+        url="/fleet" 
+      />
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="page-hero-bg">

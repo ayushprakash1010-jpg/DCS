@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useScrollReveal } from '../hooks'
+import SEO from '../components/SEO'
 
 const clientCategories = [
   {
@@ -43,6 +44,11 @@ export default function Clients() {
 
   return (
     <div ref={ref}>
+      <SEO 
+        title="Our Clients" 
+        description="Deepak Crane Service is trusted by industry leaders including L&T Construction, Tata Projects, AFCONS, and Shapoorji Pallonji for complex lifting projects across India." 
+        url="/clients" 
+      />
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="page-hero-bg">
