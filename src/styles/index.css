@@ -312,12 +312,10 @@ ul {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(15, 31, 58, 0.92) 0%,
-    rgba(27, 54, 93, 0.75) 50%,
-    rgba(15, 31, 58, 0.85) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(15, 31, 58, 0.92) 0%,
+      rgba(27, 54, 93, 0.75) 50%,
+      rgba(15, 31, 58, 0.85) 100%);
 }
 
 .hero-content {
@@ -575,12 +573,10 @@ ul {
 .service-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(15, 31, 58, 0.95) 0%,
-    rgba(15, 31, 58, 0.4) 50%,
-    transparent 100%
-  );
+  background: linear-gradient(to top,
+      rgba(15, 31, 58, 0.95) 0%,
+      rgba(15, 31, 58, 0.4) 50%,
+      transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -589,12 +585,10 @@ ul {
 }
 
 .service-card:hover .service-card-overlay {
-  background: linear-gradient(
-    to top,
-    rgba(15, 31, 58, 0.98) 0%,
-    rgba(15, 31, 58, 0.6) 60%,
-    rgba(15, 31, 58, 0.3) 100%
-  );
+  background: linear-gradient(to top,
+      rgba(15, 31, 58, 0.98) 0%,
+      rgba(15, 31, 58, 0.6) 60%,
+      rgba(15, 31, 58, 0.3) 100%);
 }
 
 .service-card h3 {
@@ -771,6 +765,7 @@ ul {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -1029,6 +1024,10 @@ ul {
 
   .mobile-toggle {
     display: flex;
+  }
+
+  .hero {
+    padding-bottom: 260px; /* Prevent overlap with floating stats */
   }
 
   .hero h1 {
@@ -1313,7 +1312,7 @@ ul {
   direction: rtl;
 }
 
-.service-detail-alt .service-detail-grid > * {
+.service-detail-alt .service-detail-grid>* {
   direction: ltr;
 }
 
@@ -1671,8 +1670,13 @@ ul {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* ==============================
@@ -2058,14 +2062,15 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
 /* --- CLIENT MARQUEE & BADGES --- */
 .clients-marquee {
   overflow: hidden;
   padding: 40px 0;
   width: 100%;
   background: var(--gray-light);
-  border-top: 1px solid rgba(0,0,0,0.05);
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .marquee-track {
@@ -2082,18 +2087,21 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #718096; /* Sleek muted grey */
+  color: #718096;
+  /* Sleek muted grey */
   background: var(--white);
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   white-space: nowrap;
   transition: all var(--transition-medium);
   display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.05);
-  position: relative; /* For z-index to work */
-  flex-shrink: 0; /* CRITICAL FIX: prevents the items from squishing together */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  position: relative;
+  /* For z-index to work */
+  flex-shrink: 0;
+  /* CRITICAL FIX: prevents the items from squishing together */
 }
 
 /* Pause ALL items when the marquee container is hovered */
@@ -2106,11 +2114,16 @@ ul {
   transform: scale(1.05);
   background: var(--white);
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 
 @keyframes scrollTrack {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - 10px)); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 10px));
+  }
 }
