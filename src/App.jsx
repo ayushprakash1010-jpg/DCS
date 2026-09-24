@@ -8,11 +8,15 @@ import Services from './pages/Services'
 import Fleet from './pages/Fleet'
 import Clients from './pages/Clients'
 import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
   useEffect(() => {
-    window.scrollTo(0, 0)
+    // Override CSS smooth scrolling for route changes so it snaps instantly
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo(0, 0);
+    document.documentElement.style.scrollBehavior = 'smooth';
   }, [pathname])
   return null
 }
@@ -30,6 +34,7 @@ function App() {
           <Route path="/fleet" element={<Fleet />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
