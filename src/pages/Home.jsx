@@ -180,11 +180,13 @@ export default function Home() {
           </div>
         </div>
         <div className="clients-marquee">
-          {['L&T Construction', 'Nesco', 'Chalet Hotels', 'AFCONS', 'Gypsum Structural India', 'HCC', 'NCC Limited', 'Welspun Michigan', 'Gawar Construction', 'Tata Projects', 'Kalpataru', 'ITD Cem', 'J. Kumar Infraprojects', 'URB Engg', 'Eagle Infra', 'Sterling & Wilson', 'Tricon', 'Shapoorji Pallonji',
-            'L&T Construction', 'Nesco', 'Chalet Hotels', 'AFCONS', 'Gypsum Structural India', 'HCC', 'NCC Limited', 'Welspun Michigan', 'Gawar Construction', 'Tata Projects', 'Kalpataru', 'ITD Cem', 'J. Kumar Infraprojects', 'URB Engg', 'Eagle Infra', 'Sterling & Wilson', 'Tricon', 'Shapoorji Pallonji'
-          ].map((name, i) => (
-            <div className="client-item" key={i}>{name}</div>
-          ))}
+          <div className="marquee-track">
+            {['L&T Construction', 'Nesco', 'Chalet Hotels', 'AFCONS', 'Gypsum Structural India', 'HCC', 'NCC Limited', 'Welspun Michigan', 'Gawar Construction', 'Tata Projects', 'Kalpataru', 'ITD Cem', 'J. Kumar Infraprojects', 'URB Engg', 'Eagle Infra', 'Sterling & Wilson', 'Tricon', 'Shapoorji Pallonji',
+              'L&T Construction', 'Nesco', 'Chalet Hotels', 'AFCONS', 'Gypsum Structural India', 'HCC', 'NCC Limited', 'Welspun Michigan', 'Gawar Construction', 'Tata Projects', 'Kalpataru', 'ITD Cem', 'J. Kumar Infraprojects', 'URB Engg', 'Eagle Infra', 'Sterling & Wilson', 'Tricon', 'Shapoorji Pallonji'
+            ].map((name, i) => (
+              <div className="client-item" key={i}>{name}</div>
+            ))}
+          </div>
         </div>
       </section>
 

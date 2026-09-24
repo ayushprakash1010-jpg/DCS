@@ -2070,9 +2070,7 @@ ul {
 }
 /* --- CLIENT MARQUEE & BADGES --- */
 .clients-marquee {
-  display: flex;
   overflow: hidden;
-  gap: 20px;
   padding: 40px 0;
   width: 100vw;
   position: relative;
@@ -2083,6 +2081,13 @@ ul {
   background: var(--gray-light);
   border-top: 1px solid rgba(0,0,0,0.05);
   border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scrollTrack 60s linear infinite;
 }
 
 .client-item {
@@ -2101,14 +2106,13 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: scroll 40s linear infinite;
   text-shadow: 0 1px 2px rgba(0,0,0,0.05);
   position: relative; /* For z-index to work */
   flex-shrink: 0; /* CRITICAL FIX: prevents the items from squishing together */
 }
 
 /* Pause ALL items when the marquee container is hovered */
-.clients-marquee:hover .client-item {
+.clients-marquee:hover .marquee-track {
   animation-play-state: paused;
 }
 
@@ -2121,7 +2125,7 @@ ul {
   z-index: 10;
 }
 
-@keyframes scroll {
+@keyframes scrollTrack {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-100% * 18)); }
+  100% { transform: translateX(calc(-50% - 10px)); }
 }
