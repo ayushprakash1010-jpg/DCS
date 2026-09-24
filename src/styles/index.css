@@ -740,16 +740,6 @@ ul {
   margin-bottom: 50px;
 }
 
-.clients-marquee {
-  display: flex;
-  gap: 60px;
-  animation: marquee 25s linear infinite;
-  width: max-content;
-}
-
-.clients-marquee:hover {
-  animation-play-state: paused;
-}
 
 .client-item {
   display: flex;
@@ -2072,12 +2062,7 @@ ul {
 .clients-marquee {
   overflow: hidden;
   padding: 40px 0;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 100%;
   background: var(--gray-light);
   border-top: 1px solid rgba(0,0,0,0.05);
   border-bottom: 1px solid rgba(0,0,0,0.05);
