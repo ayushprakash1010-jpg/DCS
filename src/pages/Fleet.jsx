@@ -5,15 +5,15 @@ import { useScrollReveal } from '../hooks'
 const equipment = [
   { type: 'Telescopic', name: 'Telescopic Crane 15MT', capacity: '15 MT', boom: '20m', image: '/images/crane-telescopic.jpg' },
   { type: 'Telescopic', name: 'Telescopic Crane 40MT', capacity: '40 MT', boom: '35m', image: '/images/crane-telescopic.jpg' },
-  { type: 'Telescopic', name: 'Telescopic Crane 100MT', capacity: '100 MT', boom: '50m', image: '/images/crane-telescopic.jpg' },
-  { type: 'Telescopic', name: 'Telescopic Crane 250MT', capacity: '250 MT', boom: '60m', image: '/images/crane-telescopic.jpg' },
-  { type: 'Telescopic', name: 'Telescopic Crane 350MT', capacity: '350 MT', boom: '70m', image: '/images/crane-telescopic.jpg' },
+  { type: 'Telescopic', name: 'Telescopic Crane 100MT', capacity: '100 MT', boom: '50m', image: '/images/telescopic-100.jpg' },
+  { type: 'Telescopic', name: 'Telescopic Crane 250MT', capacity: '250 MT', boom: '60m', image: '/images/telescopic-250.jpg' },
+  { type: 'Telescopic', name: 'Telescopic Crane 350MT', capacity: '350 MT', boom: '70m', image: '/images/telescopic-350.jpg' },
   { type: 'Farana', name: 'Farana Crane 8MT', capacity: '8 MT', boom: 'N/A', image: '/images/crane-farana.jpg' },
   { type: 'Farana', name: 'Farana Crane 12MT', capacity: '12 MT', boom: 'N/A', image: '/images/crane-farana.jpg' },
-  { type: 'Farana', name: 'Farana Crane 15MT', capacity: '15 MT', boom: 'N/A', image: '/images/crane-farana.jpg' },
-  { type: 'Farana', name: 'Farana Crane 20MT', capacity: '20 MT', boom: 'N/A', image: '/images/crane-farana.jpg' },
+  { type: 'Farana', name: 'Farana Crane 15MT', capacity: '15 MT', boom: 'N/A', image: '/images/farana-15.jpg' },
+  { type: 'Farana', name: 'Farana Crane 20MT', capacity: '20 MT', boom: 'N/A', image: '/images/farana-20.jpg' },
   { type: 'Boom Lift', name: 'Boom Lift 18m', capacity: '200 kg', boom: '18m', image: '/images/crane-boomlift.jpg' },
-  { type: 'Boom Lift', name: 'Boom Lift 35m', capacity: '250 kg', boom: '35m', image: '/images/crane-boomlift.jpg' },
+  { type: 'Boom Lift', name: 'Boom Lift 35m', capacity: '250 kg', boom: '35m', image: '/images/boomlift-35.jpg' },
   { type: 'Boom Lift', name: 'Boom Lift 52m', capacity: '300 kg', boom: '52m', image: '/images/crane-boomlift.jpg' },
 ]
 
