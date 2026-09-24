@@ -32,7 +32,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero" id="home">
         <div className="hero-bg">
-          <img src="/images/hero-bg.jpg" alt="Crane at construction site" />
+          <img src="/images/hero-bg.webp" alt="Crane at construction site" />
         </div>
         <div className="hero-content">
           <div className="hero-badge">Established 2006 — 19+ Years of Trust</div>
@@ -77,7 +77,7 @@ export default function Home() {
       <section className="about" id="about">
         <div className="container">
           <div className="about-image reveal-left">
-            <img src="/images/about-crane.jpg" alt="Deepak Crane Service Operations" />
+            <img src="/images/about-crane.webp" alt="Deepak Crane Service Operations" loading="lazy" />
             <div className="about-image-accent"></div>
           </div>
           <div className="about-content reveal-right">
@@ -122,7 +122,7 @@ export default function Home() {
           </div>
           <div className="services-grid">
             <div className="service-card reveal" style={{ transitionDelay: '0.1s' }}>
-              <img src="/images/crane-telescopic.jpg" alt="Telescopic Cranes" />
+              <img src="/images/crane-telescopic.webp" alt="Telescopic Cranes" />
               <span className="service-card-badge">15–350 MT</span>
               <div className="service-card-overlay">
                 <h3>Truck-Mounted Telescopic Cranes</h3>
@@ -130,7 +130,7 @@ export default function Home() {
               </div>
             </div>
             <div className="service-card reveal" style={{ transitionDelay: '0.2s' }}>
-              <img src="/images/crane-farana.jpg" alt="Farana Cranes" />
+              <img src="/images/crane-farana.webp" alt="Farana Cranes" />
               <span className="service-card-badge">Pick-N-Carry</span>
               <div className="service-card-overlay">
                 <h3>Farana / Pick-N-Carry Cranes</h3>
@@ -138,7 +138,7 @@ export default function Home() {
               </div>
             </div>
             <div className="service-card reveal" style={{ transitionDelay: '0.3s' }}>
-              <img src="/images/crane-boomlift.jpg" alt="Boom Lifts" />
+              <img src="/images/crane-boomlift.webp" alt="Boom Lifts" />
               <span className="service-card-badge">Aerial Access</span>
               <div className="service-card-overlay">
                 <h3>Boom Lifts / MEWPs</h3>

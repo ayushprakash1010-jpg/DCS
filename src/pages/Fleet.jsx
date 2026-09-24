@@ -4,29 +4,29 @@ import { useScrollReveal } from '../hooks'
 import SEO from '../components/SEO'
 
 const equipment = [
-  { type: 'Telescopic', name: 'Telescopic Crane 15MT', capacity: '15 MT', boom: '20m', image: '/images/crane-telescopic.jpg' },
-  { type: 'Telescopic', name: 'Telescopic Crane 40MT', capacity: '40 MT', boom: '35m', image: '/images/crane-telescopic.jpg' },
-  { type: 'Telescopic', name: 'Telescopic Crane 100MT', capacity: '100 MT', boom: '50m', image: '/images/telescopic-100.jpg' },
-  { type: 'Telescopic', name: 'Telescopic Crane 250MT', capacity: '250 MT', boom: '60m', image: '/images/telescopic-250.jpg' },
-  { type: 'Telescopic', name: 'Telescopic Crane 350MT', capacity: '350 MT', boom: '70m', image: '/images/telescopic-350.jpg' },
-  { type: 'Farana', name: 'Farana Crane 8MT', capacity: '8 MT', boom: 'N/A', image: '/images/crane-farana.jpg' },
-  { type: 'Farana', name: 'Farana Crane 12MT', capacity: '12 MT', boom: 'N/A', image: '/images/crane-farana.jpg' },
-  { type: 'Farana', name: 'Farana Crane 15MT', capacity: '15 MT', boom: 'N/A', image: '/images/farana-15.jpg' },
-  { type: 'Farana', name: 'Farana Crane 20MT', capacity: '20 MT', boom: 'N/A', image: '/images/farana-20.jpg' },
-  { type: 'Boom Lift', name: 'Boom Lift 18m', capacity: '200 kg', boom: '18m', image: '/images/crane-boomlift.jpg' },
-  { type: 'Boom Lift', name: 'Boom Lift 35m', capacity: '250 kg', boom: '35m', image: '/images/boomlift-35.jpg' },
-  { type: 'Boom Lift', name: 'Boom Lift 52m', capacity: '300 kg', boom: '52m', image: '/images/crane-boomlift.jpg' },
+  { type: 'Telescopic', name: 'Telescopic Crane 15MT', capacity: '15 MT', boom: '20m', image: '/images/crane-telescopic.webp' },
+  { type: 'Telescopic', name: 'Telescopic Crane 40MT', capacity: '40 MT', boom: '35m', image: '/images/crane-telescopic.webp' },
+  { type: 'Telescopic', name: 'Telescopic Crane 100MT', capacity: '100 MT', boom: '50m', image: '/images/telescopic-100.webp' },
+  { type: 'Telescopic', name: 'Telescopic Crane 250MT', capacity: '250 MT', boom: '60m', image: '/images/telescopic-250.webp' },
+  { type: 'Telescopic', name: 'Telescopic Crane 350MT', capacity: '350 MT', boom: '70m', image: '/images/telescopic-350.webp' },
+  { type: 'Farana', name: 'Farana Crane 8MT', capacity: '8 MT', boom: 'N/A', image: '/images/crane-farana.webp' },
+  { type: 'Farana', name: 'Farana Crane 12MT', capacity: '12 MT', boom: 'N/A', image: '/images/crane-farana.webp' },
+  { type: 'Farana', name: 'Farana Crane 15MT', capacity: '15 MT', boom: 'N/A', image: '/images/farana-15.webp' },
+  { type: 'Farana', name: 'Farana Crane 20MT', capacity: '20 MT', boom: 'N/A', image: '/images/farana-20.webp' },
+  { type: 'Boom Lift', name: 'Boom Lift 18m', capacity: '200 kg', boom: '18m', image: '/images/crane-boomlift.webp' },
+  { type: 'Boom Lift', name: 'Boom Lift 35m', capacity: '250 kg', boom: '35m', image: '/images/boomlift-35.webp' },
+  { type: 'Boom Lift', name: 'Boom Lift 52m', capacity: '300 kg', boom: '52m', image: '/images/crane-boomlift.webp' },
 ]
 
 const filterOptions = ['All', 'Telescopic', 'Farana', 'Boom Lift']
 
 const galleryImages = [
-  '/images/hero-bg.jpg',
-  '/images/crane-telescopic.jpg',
-  '/images/crane-farana.jpg',
-  '/images/crane-boomlift.jpg',
-  '/images/about-crane.jpg',
-  '/images/hero-bg.jpg',
+  '/images/hero-bg.webp',
+  '/images/crane-telescopic.webp',
+  '/images/crane-farana.webp',
+  '/images/crane-boomlift.webp',
+  '/images/about-crane.webp',
+  '/images/hero-bg.webp',
 ]
 
 export default function Fleet() {
@@ -46,7 +46,7 @@ export default function Fleet() {
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="page-hero-bg">
-          <img src="/images/hero-bg.jpg" alt="Fleet" />
+          <img src="/images/hero-bg.webp" alt="Fleet" />
         </div>
         <div className="page-hero-content">
           <span className="section-label">Equipment Fleet</span>
@@ -73,7 +73,7 @@ export default function Fleet() {
             {filtered.map((item, i) => (
               <div className="fleet-card reveal" key={i} style={{ transitionDelay: `${0.05 * i}s` }}>
                 <div className="fleet-card-image">
-                  <img src={item.image} alt={item.name} />
+                  <img src={item.image} alt={item.name} loading="lazy" />
                   <span className="fleet-card-type">{item.type}</span>
                 </div>
                 <div className="fleet-card-info">
@@ -111,7 +111,7 @@ export default function Fleet() {
                 style={{ transitionDelay: `${0.1 * i}s` }}
                 onClick={() => setLightbox(img)}
               >
-                <img src={img} alt={`Gallery ${i + 1}`} />
+                <img src={img} alt={`Gallery ${i + 1}`} loading="lazy" />
                 <div className="gallery-overlay">
                   <i className="fas fa-search-plus"></i>
                 </div>

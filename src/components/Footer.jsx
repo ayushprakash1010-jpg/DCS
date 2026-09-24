@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer-brand">
             <div style={{ marginBottom: '16px' }}>
-              <img src="/images/logo.jpg" alt="Deepak Crane Service" style={{ height: '60px', width: 'auto', borderRadius: '4px' }} />
+              <img src="/images/logo.webp" alt="Deepak Crane Service" loading="lazy" style={{ height: '60px', width: 'auto', borderRadius: '4px' }} />
             </div>
             <p>Your trusted partner for premium crane rental and heavy lifting solutions across India since 2006.</p>
             <div className="footer-social">

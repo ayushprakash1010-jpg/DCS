@@ -7,7 +7,7 @@ const services = [
     id: 'telescopic',
     title: 'Truck-Mounted Telescopic Cranes',
     badge: '15–350 MT',
-    image: '/images/crane-telescopic.jpg',
+    image: '/images/crane-telescopic.webp',
     description: 'Our truck-mounted telescopic cranes are the backbone of heavy industrial lifting. With capacities ranging from 15MT to 350MT, these cranes are ideal for:',
     features: ['Steel plant erection & maintenance', 'Refinery shutdowns & turnarounds', 'Heavy module & equipment lifting', 'Bridge & flyover construction', 'Power plant installation'],
     specs: [
@@ -21,7 +21,7 @@ const services = [
     id: 'farana',
     title: 'Farana / Pick-N-Carry Cranes',
     badge: '8–20 MT',
-    image: '/images/crane-farana.jpg',
+    image: '/images/crane-farana.webp',
     description: 'Versatile and compact, our Farana cranes are the ideal choice for material handling and lifting in tight spaces. They combine lifting power with mobility:',
     features: ['Factory floor material handling', 'Plant site equipment shifting', 'Warehouse loading/unloading', 'Confined space operations', 'Quick setup and repositioning'],
     specs: [
@@ -35,7 +35,7 @@ const services = [
     id: 'boomlift',
     title: 'Boom Lifts / MEWPs',
     badge: '18–52m',
-    image: '/images/crane-boomlift.jpg',
+    image: '/images/crane-boomlift.webp',
     description: 'Mobile Elevated Work Platforms provide safe aerial access for maintenance, inspection, and construction at height:',
     features: ['Building facade maintenance', 'Industrial painting & coating', 'Electrical & plumbing work at height', 'Structure inspection', 'Installation of signage & cladding'],
     specs: [
@@ -68,7 +68,7 @@ export default function Services() {
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="page-hero-bg">
-          <img src="/images/crane-telescopic.jpg" alt="Crane Services" />
+          <img src="/images/crane-telescopic.webp" alt="Crane Services" />
         </div>
         <div className="page-hero-content">
           <span className="section-label">Our Services</span>
@@ -87,7 +87,7 @@ export default function Services() {
           <div className="container">
             <div className="service-detail-grid">
               <div className={`service-detail-image ${index % 2 !== 0 ? 'reveal-right' : 'reveal-left'}`}>
-                <img src={service.image} alt={service.title} />
+                <img src={service.image} alt={service.title} loading="lazy" />
                 <span className="service-card-badge">{service.badge}</span>
               </div>
               <div className={`service-detail-content ${index % 2 !== 0 ? 'reveal-left' : 'reveal-right'}`}>
