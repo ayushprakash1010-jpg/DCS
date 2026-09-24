@@ -23,7 +23,7 @@ export default function Header() {
     <header className={`header ${scrolled ? 'scrolled' : ''}`} id="header">
       <div className="container">
         <Link to="/" className="logo">
-          <div className="logo-text">D<span>C</span>S</div>
+          <img src="/images/logo.jpg" alt="Deepak Crane Service" style={{ height: '50px', width: 'auto' }} />
         </Link>
         <nav className={`nav-links ${mobileOpen ? 'active' : ''}`} id="navLinks">
           <Link to="/" className={isActive('/') ? 'active' : ''}>Home</Link>
