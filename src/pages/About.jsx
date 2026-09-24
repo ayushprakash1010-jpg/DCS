@@ -15,7 +15,7 @@ export default function About() {
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="page-hero-bg">
-          <img src="/images/about-team.jpg" alt="Deepak Crane Service Team" />
+          <img src="/images/about-crane.jpg" alt="Deepak Crane Service Operations" />
         </div>
         <div className="page-hero-content">
           <span className="section-label">About Us</span>

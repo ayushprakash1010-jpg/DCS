@@ -77,7 +77,7 @@ export default function Home() {
       <section className="about" id="about">
         <div className="container">
           <div className="about-image reveal-left">
-            <img src="/images/about-team.jpg" alt="Deepak Crane Service Team" />
+            <img src="/images/about-crane.jpg" alt="Deepak Crane Service Operations" />
             <div className="about-image-accent"></div>
           </div>
           <div className="about-content reveal-right">

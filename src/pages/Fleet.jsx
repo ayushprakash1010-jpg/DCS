@@ -25,7 +25,7 @@ const galleryImages = [
   '/images/crane-telescopic.jpg',
   '/images/crane-farana.jpg',
   '/images/crane-boomlift.jpg',
-  '/images/about-team.jpg',
+  '/images/about-crane.jpg',
   '/images/hero-bg.jpg',
 ]
 
