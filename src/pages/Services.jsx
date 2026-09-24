@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useScrollReveal } from '../hooks'
+import SEO from '../components/SEO'
 
 const services = [
   {
@@ -53,8 +54,6 @@ const processSteps = [
   { icon: 'fa-truck', title: 'Demobilization', desc: 'Efficient teardown and transport once the job is complete.' },
 ]
 
-import { useScrollReveal } from '../hooks'
-import SEO from '../components/SEO'
 
 export default function Services() {
   const ref = useScrollReveal()
