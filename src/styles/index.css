@@ -150,8 +150,13 @@ ul {
 }
 
 .logo img {
-  height: 50px;
+  height: 90px;
   width: auto;
+  transition: height var(--transition-medium);
+}
+
+.header.scrolled .logo img {
+  height: 60px;
 }
 
 .logo-text {
@@ -549,6 +554,14 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+
+.services-grid-alt {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 800px;
+  margin: 30px auto 0;
 }
 
 .service-card {
@@ -1060,7 +1073,7 @@ ul {
     gap: 40px;
   }
 
-  .services-grid {
+  .services-grid, .services-grid-alt {
     grid-template-columns: 1fr;
   }
 

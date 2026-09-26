@@ -146,6 +146,24 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="services-grid-alt">
+            <div className="service-card reveal" style={{ transitionDelay: '0.1s' }}>
+              <img src="/images/scissor-lift.webp" alt="Scissor Lifts" loading="lazy" />
+              <span className="service-card-badge">Vertical Reach</span>
+              <div className="service-card-overlay">
+                <h3>Scissor Lifts</h3>
+                <p>Provide secure, straight vertical elevation with large platform areas, perfect for indoor and outdoor maintenance.</p>
+              </div>
+            </div>
+            <div className="service-card reveal" style={{ transitionDelay: '0.2s' }}>
+              <img src="/images/manlift.webp" alt="Manlifts" loading="lazy" />
+              <span className="service-card-badge">Compact Access</span>
+              <div className="service-card-overlay">
+                <h3>Manlifts / Vertical Lifts</h3>
+                <p>Compact and lightweight vertical mast lifts designed for single-person tasks in tight spaces.</p>
+              </div>
+            </div>
+          </div>
           <div style={{ textAlign: 'center', marginTop: '48px' }} className="reveal">
             <Link to="/services" className="btn btn-primary">View All Services</Link>
           </div>

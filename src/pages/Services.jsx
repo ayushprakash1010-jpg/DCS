@@ -45,6 +45,34 @@ const services = [
       { label: 'Power', value: 'Diesel / Electric' },
     ],
   },
+  {
+    id: 'scissorlift',
+    title: 'Scissor Lifts',
+    badge: 'Vertical Reach',
+    image: '/images/scissor-lift.webp',
+    description: 'Provide secure, straight vertical elevation with large platform areas, perfect for indoor and outdoor maintenance and installation tasks.',
+    features: ['Electrical & HVAC installation', 'Warehouse stocking & inventory', 'Indoor facility maintenance', 'Event rigging & lighting', 'Large platform capacity'],
+    specs: [
+      { label: 'Working Height', value: '10m – 20m' },
+      { label: 'Type', value: 'Electric / Diesel' },
+      { label: 'Platform Capacity', value: '250–500 kg' },
+      { label: 'Mobility', value: 'Self-propelled' },
+    ],
+  },
+  {
+    id: 'manlift',
+    title: 'Manlifts / Vertical Mast Lifts',
+    badge: 'Compact Access',
+    image: '/images/manlift.webp',
+    description: 'Compact and lightweight vertical mast lifts designed for single-person tasks in tight spaces, offering exceptional maneuverability.',
+    features: ['Narrow aisle maintenance', 'Retail space management', 'Facility upkeep', 'HVAC & ductwork access', 'Indoor warehousing'],
+    specs: [
+      { label: 'Working Height', value: '5m – 12m' },
+      { label: 'Type', value: 'Vertical Mast' },
+      { label: 'Platform Capacity', value: '150–200 kg' },
+      { label: 'Power', value: 'Electric' },
+    ],
+  },
 ]
 
 const processSteps = [
