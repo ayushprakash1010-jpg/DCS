@@ -15,7 +15,7 @@ export default function Footer() {
               <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
               <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
               <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
+              <a href="https://wa.me/919819413664" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
             </div>
           </div>
           {/* Quick Links */}
@@ -48,7 +48,10 @@ export default function Footer() {
                 <i className="fas fa-phone-alt"></i>
               </div>
               <div>
-                <p><strong>Call Our Support</strong><br />+91 98194 13664<br />+91 77382 87315</p>
+                <p><strong>Call Our Support</strong><br />
+                  <a href="tel:+919819413664" style={{ color: 'inherit', textDecoration: 'none' }}>+91 98194 13664</a><br />
+                  <a href="tel:+917738287315" style={{ color: 'inherit', textDecoration: 'none' }}>+91 77382 87315</a>
+                </p>
               </div>
             </div>
             <div className="footer-contact-item">
@@ -56,7 +59,9 @@ export default function Footer() {
                 <i className="fas fa-envelope"></i>
               </div>
               <div>
-                <p><strong>Email</strong><br />deepakcrane@gmail.com</p>
+                <p><strong>Email</strong><br />
+                  <a href="mailto:deepakcrane@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>deepakcrane@gmail.com</a>
+                </p>
               </div>
             </div>
             <div className="footer-contact-item">
